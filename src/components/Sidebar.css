@@ -1,0 +1,115 @@
+.sidebar{
+    width: 240px;
+    overflow: scroll;
+    height: 900px;
+    background-color: white;
+    position: fixed;
+    top:64px;
+    flex: 0.3;
+}
+
+.sidebar .solbar{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.solbar span {
+    margin-left: 15px;
+}
+
+.solbar:hover{
+    background-color: rgb(245, 244, 244);
+    cursor: pointer;
+}
+
+.solbarhoverbir:hover{
+    background-color: rgb(245, 244, 244);
+    cursor: pointer;
+}
+
+.solbarbir div{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.solbarbir div span{
+    margin-left: 15px;
+    letter-spacing: 1px;
+}
+
+
+.sidebar .btn{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid blue;
+    background-color: transparent;
+    padding: 6px 15px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-bottom: 17px;
+}
+
+.sidebar .btn span{
+    color: blue;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.sidebar button .MuiAvatar-colorDefault{
+    background-color: blue ;
+    width: 25px;
+    height: 25px;
+}
+
+.sidebar p{
+    padding: 0px 25px;
+    color: gray;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .sidebar{       
+        width: 180px;
+        overflow: hidden;
+        height: 300px;
+        background-color: white;
+        font-size: 13px;
+        position: fixed;
+        z-index: 500;
+        left: 0;
+        flex: 0.3;
+    }
+
+    .sidebar .solbariki{
+        display: none;
+    }
+
+    .sidebar .solbar{
+        margin-top: 15px;
+    }
+
+    .solbarhover:hover{
+        background-color: rgb(109, 109, 109);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    hr{
+        border: none;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .sidebar{
+        display: none;
+    }
+}
